@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            display: flex;
+            gap: 5px; /* Espace entre les images */
+            justify-content: center; /* Centrer les images horizontalement */
+            width: 500%; 
+            margin:50px auto; 
+            height: 600px;
+            align-items: center;
+            max-width: 2000px;
+        }
+
+        .image-container img {
+            width: auto; /* Ajuste automatiquement la largeur */
+            height: 100%; /* Adapte la hauteur à celle du conteneur */
+            max-height: 300px; /* Limite la hauteur maximale pour éviter qu'elle dépasse le conteneur */
+            object-fit: contain; /* Assure que l'image est entièrement visible */
+            border: 1px solid #ccc; /* Optionnel : bordure autour des images */
+            border-radius: 5px; /* Optionnel : coins arrondis */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+
+    <main>
+        <div class="image-container">
+            <img src="mouche.jpg" alt="Image 1">
+            <img src="fbleu.png" alt="Image 2">
+            <img src="plage.jpg" alt="Image 3">
+            <img src="fvoile.png"  alt="Image 4"> 
+            <img src="ahhmed.png" alt="Image 6"> 
+            <img src="assis.png" alt="Image 7"> 
+        </div>
+    </main>
+</body>
+</html>

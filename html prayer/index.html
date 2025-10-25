@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afficher une image</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: white;
+      color: rgb(122, 197, 76);
+      font-family: Helvetica, sans-serif;
+    }
+    #imageContainer {
+      display: none; 
+      margin-top: 20px;
+      align-items: center;
+      gap: 20px; 
+    }
+    #image {
+      max-width: 50%;
+      height: auto;
+    }
+    #text {
+      color: rgb(122, 197, 76);
+      font-size: 1rem;
+    }
+    #additionalText1, #additionalText2 {
+      display: none; 
+      margin-top: 400px; 
+      color: rgb(122, 197, 76);
+      font-size: 1rem;
+      text-align: center;
+    }
+    #redirectImage {
+      display: none;
+      margin-top: 20px;
+      max-width: 200px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body> 
+
+  <label for="options">What to do in this place, unless one thinks about it:</label>
+  <input type="text" id="options" list="optionsList" placeholder="pray" />
+
+  <datalist id="optionsList">
+    <option value="Seize the possibilities and the past tears of men and the breath of the fixed plans as object of the generations drawn up"></option>
+    <option value="See a woman draped in fabrics carrying laundry to hang out in front of a field of wind turbines and electrical infrastructure, in a misty blue-green"></option>
+    <option value="You are, so you look down"></option>
+  </datalist>
+  
+  <details> 
+    <summary>I always look down, at my foot, the geometrical and cold slab, snakes slithering sand beige, 
+      it is the future of men, skipping stages that exclude for an immense fall, days without ages.</summary>
+    <p>when I <span id="showImage" style="cursor: pointer; color: rgb(232, 210, 91); text-decoration: underline;">pray</span></p>
+  </details>
+
+  <!-- Conteneur pour l'image et le texte -->
+  <div id="imageContainer">
+    <img id="image" src="priere.png" alt="Image affichée après clic" />
+    <p id="text">ⵔⵔᄋо°°</p>
+  </div>
+
+  <!-- Paragraphe supplémentaire sous l'image -->
+  <p id="additionalText1">
+    polyester clothes and mesh, sometimes it's just seeing the silent 
+    women and men and knowing their story of passing through the deserts, passing, and then, similar,
+    and aside especially at the end, in the desert, they go away in sentences that barely concern you,
+    this pain of walking in the poignancy of feelings without strength. we should hallelujah! Live
+    as before while we would live as after, it's the vegetal and muddy techno-archaism that we feel
+    when we look at the ground while praying, the face reddened by the presence of the third of 
+    the lost. 
+    to pray is to sit on wicker and let silence stay, earthly, taire reste, terrestre. ~~~~ if coding 
+    is an operational gesture in silence, do you bow down, retreat, conceive the fullness of extent, 
+    able to be interested in unreal materials, would the sky be too charged here, the air too heavy and electric orange to pray, 
+    or would it favor the passage ? ~~~~
+  </p>
+  <p id="additionalText2"> praying is also like watching videos of pakistani dude doing ASMR at home with their children,
+    or google maps users commenting under some of Syria's and Lebanon's border,it's how you would like to be the opening and the constraint, 
+    the reverse step and the random traits of difference, perhaps it's also sitting or kneeling and admitting that we have a premonition of 
+    what is happening despite us, the rumors and loudspeakers, </p>
+
+     
+  <a href="priere2.html">
+    <img id="redirectImage" src="rr.png" alt="Cliquez pour aller à une autre page" />
+  </a>
+
+
+  <script>
+    // Récupérer les éléments
+    const showImage = document.getElementById("showImage");
+    const imageContainer = document.getElementById("imageContainer");
+    const additionalText = document.getElementById("additionalText1");
+    const additionalText2 = document.getElementById("additionalText2");
+    const redirectImage = document.getElementById("redirectImage");
+
+
+    // Ajouter un événement de clic
+    showImage.addEventListener("click", () => {
+      imageContainer.style.display = "flex"; // Afficher le conteneur avec l'image et le texte
+      additionalText1.style.display = "block"; // Afficher le premier paragraphe
+      additionalText2.style.display = "block"; // Afficher le deuxième paragraphe
+      redirectImage.style.display = "block"; // Afficher l'image avec redirection
+    });
+  </script>
+
+</body>
+</html>
