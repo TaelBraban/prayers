@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Afficher une image</title>
+  <link rel="icon" type="image/png" href="ro.png">
   <style>
     body {
       margin: 0;
@@ -11,6 +12,7 @@
       background-color: white;
       color: rgb(122, 197, 76);
       font-family: Helvetica, sans-serif;
+      font-size: 1.2rem; /* Augmente la taille du texte général */
     }
     #imageContainer {
       display: none; 
@@ -24,14 +26,15 @@
     }
     #text {
       color: rgb(122, 197, 76);
-      font-size: 1rem;
+      font-size: 1.2rem; /* Augmente la taille du texte à côté de l'image */
     }
     #additionalText1, #additionalText2 {
       display: none; 
       margin-top: 400px; 
       color: rgb(122, 197, 76);
-      font-size: 1rem;
+      font-size: 1.2rem; /* Augmente la taille des paragraphes supplémentaires */
       text-align: center;
+      line-height: 1.6; /* Améliore l'espacement entre les lignes */
     }
     #redirectImage {
       display: none;
@@ -40,20 +43,34 @@
       height: auto;
       cursor: pointer;
     }
+    label {
+      font-size: 1.1rem; /* Augmente la taille du label */
+    }
+    select {
+      font-size: 1.1rem; /* Augmente la taille du texte dans le select */
+      padding: 2px;
+    }
+    details summary {
+      font-size: 1.1rem; /* Augmente la taille du texte dans le summary */
+      cursor: pointer;
+    }
+    details p {
+      font-size: 1.1rem; /* Augmente la taille du texte dans les détails */
+    }
   </style>
 </head>
 
 <body> 
 
   <label for="options">What to do in this place, unless one thinks about it:</label>
-  <input type="text" id="options" list="optionsList" placeholder="pray" />
+  <select id="options">
+    <option value="">pray</option>
+    <option value="pray">pray</option>
+    <option value="Seize the possibilities and the past tears of men and the breath of the fixed plans as object of the generations drawn up">Seize the possibilities and the past tears of men and the breath of the fixed plans as object of the generations drawn up</option>
+    <option value="See a woman draped in fabrics carrying laundry to hang out in front of a field of wind turbines and electrical infrastructure, in a misty blue-green">See a woman draped in fabrics carrying laundry to hang out in front of a field of wind turbines and electrical infrastructure, in a misty blue-green</option>
+    <option value="You are, so you look down">You are, so you look down</option>
+  </select>
 
-  <datalist id="optionsList">
-    <option value="Seize the possibilities and the past tears of men and the breath of the fixed plans as object of the generations drawn up"></option>
-    <option value="See a woman draped in fabrics carrying laundry to hang out in front of a field of wind turbines and electrical infrastructure, in a misty blue-green"></option>
-    <option value="You are, so you look down"></option>
-  </datalist>
-  
   <details> 
     <summary>I always look down, at my foot, the geometrical and cold slab, snakes slithering sand beige, 
       it is the future of men, skipping stages that exclude for an immense fall, days without ages.</summary>
